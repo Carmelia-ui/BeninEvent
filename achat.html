@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paiement sécurisé - EventsBenin</title>
+<link rel="stylesheet" href="./bootstrap-5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="./fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+<style>
+body {
+  background: linear-gradient(135deg,#ff6600,#ff944d);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family: Arial, sans-serif;
+}
+.payment-card {
+  background:#fff;
+  width:100%;
+  max-width:650px;
+  border-radius:15px;
+  padding:35px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+h2 {
+  color:#ff6600;
+  font-weight:bold;
+}
+.payment-method {
+  border:2px solid #ddd;
+  border-radius:10px;
+  padding:15px;
+  cursor:pointer;
+  transition:0.3s;
+}
+.payment-method:hover {
+  border-color:#ff6600;
+  background:#fff5ef;
+}
+.btn-main {
+  background:#ff6600;
+  color:#fff;
+  border:none;
+  width:100%;
+}
+.btn-main:hover {
+  background:#e65c00;
+}
+#successSection {
+  display:none;
+}
+</style>
+</head>
+<body>
+
+<div class="payment-card">
+
+  <div id="paymentSection">
+    <h2 class="text-center mb-4">Paiement sécurisé</h2>
+
+    <div class="mb-3">
+      <h5>Concert de Jazz</h5>
+      <p>25 Mars 2026 | Cotonou</p>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Quantité</label>
+      <input type="number" class="form-control" value="1" min="1">
+    </div>
+
+    <div class="mb-4">
+      <strong>Total : 5000 FCFA</strong>
+    </div>
+
+    <h5 class="mb-3">Choisissez un mode de paiement</h5>
+    <div class="row g-3 mb-4">
+      <div class="col-md-4">
+        <div class="payment-method text-center">
+          <i class="fas fa-mobile-alt fa-2x text-warning mb-2"></i>
+          <h6>MTN MoMo</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="payment-method text-center">
+          <i class="fas fa-sim-card fa-2x text-primary mb-2"></i>
+          <h6>Moov Money</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="payment-method text-center">
+          <i class="fas fa-wallet fa-2x text-success mb-2"></i>
+          <h6>Celtis Cash</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Nom du titulaire</label>
+      <input type="text" class="form-control" placeholder="Ex: John Doe" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Numéro de téléphone</label>
+      <input type="text" class="form-control" placeholder="Ex: 97000000" required>
+    </div>
+    <button class="btn btn-main" onclick="showSuccess()">Confirmer le paiement</button>
+     <button class="btn btn-main my-2" onclick="goBack()">Annuler</button>
+  </div>
+  <!-- Section succès -->
+  <div id="successSection" class="text-center">
+    <i class="fas fa-check-circle fa-4x text-success mb-3"></i>
+    <h3>Paiement confirmé avec succès !</h3>
+    <p>Votre ticket est maintenant disponible.</p>
+    <button class="btn btn-main mb-2" onclick="downloadTicket()">Télécharger mon ticket</button>
+    <button class="btn btn-secondary" id="goTicketsBtn" style="display:none;" onclick="goTickets()">Voir mes billets</button>
+  </div>
+
+</div>
+
+<script src="./bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function showSuccess() {
+  document.getElementById("paymentSection").style.display = "none";
+  document.getElementById("successSection").style.display = "block";
+}
+
+function downloadTicket() {
+  alert("Téléchargement effectué !");
+  document.getElementById("goTicketsBtn").style.display = "block";
+}
+
+function goTickets() {
+  window.location.href = "mes-billets.html";
+}
+function goBack() {
+    // Redirige vers la page détail
+    window.location.href = "details.html";
+}
+</script>
+
+</body>
+</html>

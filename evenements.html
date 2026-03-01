@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EventsBenin - Événements</title>
+<link rel="stylesheet" href="./bootstrap-5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="./fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+<style>
+body { background-color: #f8f9fa; }
+
+.btn { background-color: #ff6600 !important; border: none !important; color: #fff !important; }
+.btn:hover { background-color: #e65c00 !important; }
+.card-img-top { height: 200px; object-fit: cover; }
+.card-body .badge { margin-bottom: 5px; }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">EventsBenin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link active" href="evenements.html">Événements</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#apropos">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="inscription.html">Inscription</a></li>
+        <li class="nav-item"><a class="nav-link" href="connexion.html">Connexion</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ÉVÉNEMENTS -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Nos Événements</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+      <!-- Événement 1 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="./fichiers/afro.jpg" class="card-img-top" alt="Concert Gospel Live">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-secondary mb-2">Concert</span>
+            <h5 class="card-title">Concert Gospel Live</h5>
+            <p><i class="fas fa-calendar-alt"></i> 10 Mai 2026<br>
+            <i class="fas fa-map-marker-alt"></i> Cotonou</p>
+            <p class="fw-bold">5000 FCFA</p>
+            <a href="details.html" class="btn mt-auto">Voir détails</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Événement 2 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="./fichiers/concert.jpg" class="card-img-top" alt="Conférence Innovation Digitale">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-secondary mb-2">Conférence</span>
+            <h5 class="card-title">Conférence Innovation Digitale</h5>
+            <p><i class="fas fa-calendar-alt"></i> 15 Juin 2026<br>
+            <i class="fas fa-map-marker-alt"></i> Porto-Novo</p>
+            <p class="fw-bold">Gratuit</p>
+            <a href="details.html" class="btn mt-auto">Voir détails</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Événement 3 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="./fichiers/festival.jpg" class="card-img-top" alt="Festival Culturel Vodoun">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-secondary mb-2">Festival</span>
+            <h5 class="card-title">Festival Culturel Vodoun</h5>
+            <p><i class="fas fa-calendar-alt"></i> 20 Juin 2026<br>
+            <i class="fas fa-map-marker-alt"></i> Ouidah</p>
+            <p class="fw-bold">3000 FCFA</p>
+            <a href="details-un.html" class="btn mt-auto">Voir détails</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Événement 4 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="./fichiers/leadership.png" class="card-img-top" alt="Séminaire Leadership Féminin">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-secondary mb-2">Séminaire</span>
+            <h5 class="card-title">Séminaire Leadership Féminin</h5>
+            <p><i class="fas fa-calendar-alt"></i> 05 Août 2026<br>
+            <i class="fas fa-map-marker-alt"></i> Cotonou</p>
+            <p class="fw-bold">2000 FCFA</p>
+            <a href="details.html" class="btn mt-auto">Voir détails</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Événement 5 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="./fichiers/web.png" class="card-img-top" alt="Formation Développement Web">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-secondary mb-2">Formation</span>
+            <h5 class="card-title">Formation Développement Web</h5>
+            <p><i class="fas fa-calendar-alt"></i> 12 Septembre 2026<br>
+            <i class="fas fa-map-marker-alt"></i> Abomey-Calavi</p>
+            <p class="fw-bold">15000 FCFA</p>
+            <a href="details.html" class="btn mt-auto">Voir détails</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Événement 6 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="./fichiers/start.png" class="card-img-top" alt="Compétition Startups">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-secondary mb-2">Compétition</span>
+            <h5 class="card-title">Compétition Startups</h5>
+            <p><i class="fas fa-calendar-alt"></i> 12 Septembre 2026<br>
+            <i class="fas fa-map-marker-alt"></i> Abomey-Calavi</p>
+            <p class="fw-bold">15000 FCFA</p>
+            <a href="details.html" class="btn mt-auto">Voir détails</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Événement 7 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="./fichiers/gala.jpg" class="card-img-top" alt="Soirée Gala Étudiants">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-secondary mb-2">Soirée</span>
+            <h5 class="card-title">Soirée Gala Étudiants</h5>
+            <p><i class="fas fa-calendar-alt"></i> 18 Novembre 2026<br>
+            <i class="fas fa-map-marker-alt"></i> Porto-Novo</p>
+            <p class="fw-bold">4000 FCFA</p>
+            <a href="details.html" class="btn mt-auto">Voir détails</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Événement 8 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="./fichiers/afrobeat.png" class="card-img-top" alt="Festival Afrobeat">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-secondary mb-2">Festival</span>
+            <h5 class="card-title">Festival Afrobeat</h5>
+            <p><i class="fas fa-calendar-alt"></i> 05 Décembre 2026<br>
+            <i class="fas fa-map-marker-alt"></i> Cotonou</p>
+            <p class="fw-bold">8000 FCFA</p>
+            <a href="details.html" class="btn mt-auto">Voir détails</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">EventsBenin</h5>
+        <p>Découvrez, réservez et profitez des meilleurs évènements près de chez vous.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h6 class="fw-bold">Liens utiles</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
+          <li><a href="evenements.html" class="text-white text-decoration-none">Évènements</a></li>
+          <li><a href="connexion.html" class="text-white text-decoration-none">Connexion</a></li>
+          <li><a href="inscription.html" class="text-white text-decoration-none">Inscription</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h6 class="fw-bold">Suivez-nous</h6>
+        <i class="fab fa-facebook fa-lg me-3"></i>
+        <i class="fab fa-twitter fa-lg me-3"></i>
+        <i class="fab fa-instagram fa-lg me-3"></i>
+        <i class="fab fa-linkedin fa-lg"></i>
+      </div>
+    </div>
+    <hr class="bg-secondary">
+    <div class="text-center pb-3">
+      <small>&copy; 2026 EventsBenin - Tous droits réservés</small>
+    </div>
+  </div>
+</footer>
+
+<script src="./bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
